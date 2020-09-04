@@ -17,4 +17,5 @@ sudo apt update
 python3 -m pip install --upgrade pip
 python3 -m pip install --upgrade pwntools
 sudo apt update
+sudo apt install curl
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
