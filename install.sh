@@ -16,10 +16,6 @@ sudo apt-get install -y python3 python3-pip python3-dev git libssl-dev libffi-de
 sudo apt update
 python3 -m pip install --upgrade pip
 python3 -m pip install --upgrade pwntools
-sudo apt update
-sudo apt install curl
-sudo apt install zsh && sudo apt update
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 sudo apt install -y net-tools openssh-server
 sudo apt update
 sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
@@ -28,5 +24,9 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt update
 apt-cache policy docker-ce
 sudo apt install -y docker-ce
+sudo apt update
+sudo apt install curl
+sudo apt install zsh && sudo apt update
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 echo "now run: 'sudo usermod -aG docker ${USER}'"
 echo "##########################################"
