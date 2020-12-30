@@ -20,5 +20,13 @@ sudo apt update
 sudo apt install curl
 sudo apt install zsh && sudo apt update
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-sudo apt install net-tools openssh-server
+sudo apt install -y net-tools openssh-server
 sudo apt update
+sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+sudo apt update
+apt-cache policy docker-ce
+sudo apt install -y docker-ce
+echo "now run: 'sudo usermod -aG docker ${USER}'"
+echo "##########################################"
