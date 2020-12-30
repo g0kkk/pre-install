@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt -y update
 sudo apt -y upgrade
-sudo apt install -y vim zsh && sudo apt update
+sudo apt install -y vim zsh zip && sudo apt update
 sudo apt install -y python3 && sudo apt update
 sudo apt install -y build-essentials
 sudo apt install -y python3-pip
